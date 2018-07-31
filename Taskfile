@@ -1,0 +1,65 @@
+#!/bin/bash
+
+function build {
+        # Concat libs and app.js
+        cat ./src/js/app.js > ./dist/app.js
+        # Minify using https://github.com/babel/minify#cli
+        minify ./dist/app.js > ./dist/app.min.js
+        # Copy fonts
+        cp ./src/fnt/PermanentMarker/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2 ./dist/
+        # Copy images
+        cp ./src/img/* ./dist/
+        # Copy HTML files
+        cp ./src/html/* ./dist/
+        # Copy text files
+        cp ./src/txt/* ./dist/
+        # Copy sound files
+        cp ./src/snd/* ./dist/
+        # Copy shared libs
+        cp -r ./lib ./dist/
+        # Include fontawesome css into html
+        cp ./lib/fontawesome-free-5.1.0-web/css/all.css ./tmp/fontawesome-all.css
+        sed -i.bak s:../webfonts:lib/fontawesome-free-5.1.0-web/webfonts:g ./tmp/fontawesome-all.css
+        sed -e '/\/\*FONTAWESOMECSS\*\//{r ./tmp/fontawesome-all.css' -e 'd}' -i.bak ./dist/index.html
+        # Optimize jpgs based on Googles Guidelines:
+        # https://developers.google.com/speed/docs/insights/OptimizeImages
+        for f in `ls -1 dist/*.jpg`; do
+                convert $f -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace sRGB $f
+        done
+}
+
+function clean {
+        rm -rf ./dist/*
+}
+
+function deploy {
+        scp \
+                dist/*.js \
+                dist/favicon* \
+                dist/*.html \
+                dist/*.txt \
+                dist/*.jpg \
+                root@superevilmegaco.com:/www/gorilla.moe/www/htdocs/
+}
+
+function full-deploy {
+        deploy
+        scp -r \
+        dist/just-do-it.* \
+        dist/lib root@superevilmegaco.com:/www/gorilla.moe/www/htdocs/
+}
+
+function default {
+        build
+}
+
+function help {
+        echo "$0 <task> <args>"
+        echo "Tasks:"
+        compgen -A function | cat -n
+}
+
+TIMEFORMAT="Task completed in %3lR"
+
+time ${@:-default}
+

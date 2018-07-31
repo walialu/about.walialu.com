@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/gorillamoe
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://gorilla.moe
+  * I am gorillamoe (https://keybase.io/gorillamoe) on keybase.
+  * I have a public key with fingerprint CB7D 5FDB 7B29 7013 D8A9  8820 07CB BE35 363A 011D
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d99cc13f041801b954fd30a91d543f5cc2b97d981c5272ace98a2ce60f4f42eb0a",
+      "fingerprint": "cb7d5fdb7b297013d8a9882007cbbe35363a011d",
+      "host": "keybase.io",
+      "key_id": "07cbbe35363a011d",
+      "kid": "0101d5302e423cdba5bf7b83011d9846e6daf302045873a6f2852dea2f9d167efd410a",
+      "uid": "7d642d33ef1433078d00e9e27db27519",
+      "username": "gorillamoe"
+    },
+    "service": {
+      "hostname": "gorilla.moe",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1530521260,
+  "expire_in": 157680000,
+  "prev": "83a9b3eee0e2678e422da5e0fcf5ee8e3348d9496b9d3506e3b1b43ae002bebb",
+  "seqno": 14,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMNvAnicZZJ/TFVlGMfvRb0EksoGoUALz2oiILzn9zkX0CLIGC5QYjUkr+c973vg
+TLj3eu/lEl78QZhaCwEVjBVGjGaKP3CAomMoQmDyoyJNHU3WRBpzV1JoSSPpHMo/
+Wu8/797n+Tzf9/s8e3qeX2DwN/r2d7Kc2fiisb+rttCwWRw/5SGgDRUTZg+xDc9f
+OB9hp8uyTUWEmQAkBZAoyjJJK4AhBUBCkWUURANJJBHL0AoryxQUeSQKpMxSPCXJ
+WBQkSsYcUBiFoTAEEhFDKKo1FzvsDtXq0mRlyCNWQZCHlMgDkkaCJAoCBQAvQ4hp
+luZoCZAk0grzbE69QjMHJSeOVW1aTHtY/rH3f/6Zb6DZowGFGYqWEZRYqPBQoHVI
+FBgOc0hStDRgWIGnJU6hBJZCWKIUEZEcjxXEkPO+C+fleMQxFKJprJAMTQNeQABg
+EVM8ghTPkqIOOrHDKhVgjc61OdT8fKnAhomdMYQWd6sy1ker9/JfJlaHYgi7w+ay
+ybZ8LZHnctmdZr3QVWzXySIMLf9qWKBqRdogtQo3djhVm5Uwkxopu1RdlNQaZimS
+4kAMgd+3qw5sUXWC5TkBaEf/B7s1SYGWREhjjAGmOF7QZkQhicVAkRUWYwHTNCMg
+kRE5KCKaBRymIQkZWsIAUBBDSOhdbbfaNG1G8ynlappONdcquQodWs9Xu3IWGoz+
+BtMiH33DDP5+y57tXfvjZYaDyyvHP4Vzr0cGBdz1Prm+7puA3siykKH27JTfZzpu
+VX+EnSXBF+WEvqB7m7768/jD8YC9Uxvq7KlZe/BbL+wPveRe/UP2jvuxRvSab+86
+y2+lYT82NJg9V7LX+HvPeb0+k68kN4b7vSp3BT9ZKt2wVtkvB8/WN7yZdK30paTV
+Uuv0xMdxPV8+Kp+NO3A7+k5pVOKQaehQ1K6zmy/dHLxwzCuHZTVNGlOvRRBBh2Xa
+XHDG25GWJsSnNTwlQqqfq0zY0XrsRubuI1vbusf9BtZXrYwLbNkw0XToSsHRacdk
+1unqd/pbNtafTmqhDniWDvaaIlYFT/0c1NSctOBoR+z4y1u+qElNP96Wt2et1G0b
+a244d8LeM/3Yb+H+r3/qXNu2HMSJYXXuvgLHqrAV9Ni+xl9natvLDfVE6Ozcpq7L
+t2Yr5j4oz+itfDB9Fo1Ep1oPG79NDVsTnhFlv1g0HL0xOn0mJ3J99mf8nX3JnydY
+l1Q8DAxPGb7Q7Zm8vT3w7kqqcWCxaayEXFwbnRzfqwy7Ro7ULPnwl5rSgzmj9yNC
+TiT6N+9aUlE2QeTOjcJgD9ftUVd8997uqgehphq3lL515GbGSGVesSGzyHzq/GzZ
+ons1JZ1/nB/NgY8SJJ83Ej+5TsYNKk/fPlP3bny9dcx3hvj+6kAr6us++dfeLXWZ
+O02dQvLJltqUqZi5vwGWX79H
+=d2ue
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gorillamoe
+
+==================================================================
