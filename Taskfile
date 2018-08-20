@@ -49,17 +49,15 @@ function full-deploy {
         dist/lib root@superevilmegaco.com:/www/gorilla.moe/www/htdocs/
 }
 
-function default {
-        build
+function tasks {
+        compgen -A function
 }
 
 function help {
         echo "$0 <task> <args>"
         echo "Tasks:"
-        compgen -A function | cat -n
+        tasks | cat -n
 }
 
-TIMEFORMAT="Task completed in %3lR"
-
-time ${@:-default}
+${@:-tasks}
 
