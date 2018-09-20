@@ -1,5 +1,9 @@
 #!/bin/bash
 
+function __show_tasks {
+        compgen -A function | grep -v "^_"
+}
+
 function build {
         # Concat libs and app.js
         cat ./src/js/app.js > ./dist/app.js
@@ -47,10 +51,6 @@ function full-deploy {
         scp -r \
         dist/just-do-it.* \
         dist/lib root@superevilmegaco.com:/www/gorilla.moe/www/htdocs/
-}
-
-function tasks {
-        compgen -A function
 }
 
 function help {
