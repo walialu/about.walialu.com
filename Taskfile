@@ -56,7 +56,7 @@ function full-deploy {
 function help {
         echo "$0 <task> <args>"
         echo "Tasks:"
-        tasks | cat -n
+        __show_tasks | cat -n
 }
 
 ${@:-tasks}
