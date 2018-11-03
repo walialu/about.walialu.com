@@ -1,1 +1,1 @@
-wget https://about.gorilla.moe/pair.bash -O /tmp/pair.bash && bash $_
+wget https://gorilla.moe/pair.bash -O /tmp/pair.bash && bash $_
