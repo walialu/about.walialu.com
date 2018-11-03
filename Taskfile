@@ -6,19 +6,11 @@ function __show_tasks {
 
 function build {
         # Concat libs and app.js
-        cat ./src/js/app.js > ./dist/app.js
+        cat ./lib/tippy.all.min.js ./src/app.js > ./dist/app.js
         # Minify using https://github.com/babel/minify#cli
         minify ./dist/app.js > ./dist/app.min.js
-        # Copy fonts
-        cp ./src/fnt/PermanentMarker/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2 ./dist/
-        # Copy images
-        cp ./src/img/* ./dist/
-        # Copy HTML files
-        cp ./src/html/* ./dist/
-        # Copy text files
-        cp ./src/txt/* ./dist/
-        # Copy sound files
-        cp ./src/snd/* ./dist/
+        cp -r ./static/* ./dist/
+        cp ./src/index.html ./dist/
         # Copy shared libs
         cp -r ./lib ./dist/
         # Include fontawesome css into html
