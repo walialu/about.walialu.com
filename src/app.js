@@ -1,8 +1,12 @@
 (function(window, document) {
         "use strict";
         const toggleAbout = () => {
-                document.querySelector(".container1").style.opacity = 0;
-                document.querySelector(".container2").style.opacity = 1;
+                const c1 = document.querySelector(".container1");
+                const c2 = document.querySelector(".container2");
+                c1.style.opacity = 0;
+                c2.style.opacity = 1;
+                c1.style.visibility = "hidden";
+                c2.style.visibility = "visible";
                 document.body.classList.remove("normal");
                 document.body.classList.add("about");
         };

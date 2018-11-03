@@ -66,7 +66,7 @@ body.about {
         transform: translate(-50%, -50%);
         max-width: 530px;
         opacity: 1;
-        transition: opacity 1s;
+        transition: opacity 1s, visibility 1s;
 }
 .container1 p {
         line-height: 1.6rem;
@@ -163,7 +163,8 @@ audio {
         margin-bottom: 2rem;
         font-family: 'Nanum Pen Script', cursive;
         opacity: 0;
-        transition: opacity 1s;
+        visibility: hidden;
+        transition: opacity 1s, visibility 1s;
 }
 
 @media (min-width: 650px) {
