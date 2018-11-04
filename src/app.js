@@ -52,6 +52,14 @@
                         toggleAbout();
                 }
         });
+        document.querySelector("#back-button").addEventListener("click", () => {
+                window.location.hash = "";
+                history.replaceState(
+                        {},
+                        document.title,
+                        window.location.href.split("#")[0]
+                );
+        });
         document.querySelector("#aboutmelink").addEventListener(
                 "click",
                 toggleAbout
