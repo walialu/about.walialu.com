@@ -75,7 +75,7 @@ body.about .container2 {
         visibility: visible;
 }
 
-body.about .back-button-container {
+body.about .back-button {
         display: block;
         opacity: 1;
 }
@@ -114,22 +114,29 @@ audio {
 
 .back-button-container {
         position: fixed;
-        display:none;
         top: 10px;
         left: 10px;
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
         z-index: 9;
-        opacity: 0;
-        transition: opacity 1s;
 }
 .back-button {
+        display:none;
         cursor: pointer;
+        width: 32px;
+        height: 32px;
+        font-size: 32px;
+        line-height: 32px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 50%;
+        color: #272b30;
+        opacity: 0;
+        transition: opacity 1s;
 }
 
 .back-button:after {
         content: "←";
-        color: #fff;
         font-size: 32px;
         line-height: 32px;
 }
