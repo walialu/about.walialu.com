@@ -29,7 +29,8 @@ function clean {
 }
 
 function deploy {
-        scp \
+        scp -r \
+                dist/fonts \
                 dist/*.js \
                 dist/favicon* \
                 dist/*.html \
