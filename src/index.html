@@ -120,25 +120,12 @@ audio {
         height: 32px;
         z-index: 9;
 }
+
 .back-button {
-        display:none;
-        cursor: pointer;
-        width: 32px;
-        height: 32px;
-        font-size: 32px;
-        line-height: 32px;
-        border: 1px solid #fff;
-        background-color: #fff;
-        border-radius: 50%;
-        color: #272b30;
+        display: none;
         opacity: 0;
         transition: opacity 1s;
-}
-
-.back-button:after {
-        content: "←";
-        font-size: 32px;
-        line-height: 32px;
+        cursor: pointer;
 }
 
 .speaker-container {
@@ -390,7 +377,7 @@ a[data-tippy-html] {
         </noscript>
         <body class="normal">
                 <a id="aboutme"></a>
-                <div class="back-button-container"><div id="back-button" class="back-button"></div></div>
+                <div class="back-button-container"><i id="back-button" class="fas fa-arrow-circle-left back-button"></i></div>
                 <div class="speaker-container"><div id="speaker" class="speaker mute"><span></span></div></div>
                 <div class="container1">
                         <header>
