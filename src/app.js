@@ -1,14 +1,14 @@
 (function(window, document) {
         "use strict";
         const toggleAbout = () => {
-                const c1 = document.querySelector(".container1");
-                const c2 = document.querySelector(".container2");
-                c1.style.opacity = 0;
-                c2.style.opacity = 1;
-                c1.style.visibility = "hidden";
-                c2.style.visibility = "visible";
-                document.body.classList.remove("normal");
-                document.body.classList.add("about");
+                document.body.classList.toggle("normal");
+                document.body.classList.toggle("about");
+                const themeColor = document.querySelector("meta[name='theme-color']");
+                if (themeColor.content === "#19cf85") {
+                        themeColor.content = "#272b30";
+                } else {
+                        themeColor.content = "#19cf85";
+                }
         };
         const hashCallback = () => {
                 const h = window.location.hash;
@@ -43,7 +43,16 @@
         audio.addEventListener("play", audioPlayPauseCb);
         audio.addEventListener("pause", audioPlayPauseCb);
         speaker.addEventListener("click", speakerCb, false);
-        document.querySelector("#aboutme").addEventListener(
+        window.addEventListener("hashchange", () => {
+                if (window.location.hash === "") {
+                        const activeTippy = document.querySelector(".tippy-active");
+                        if (activeTippy) {
+                                activeTippy._tippy.hide();
+                        }
+                        toggleAbout();
+                }
+        });
+        document.querySelector("#aboutmelink").addEventListener(
                 "click",
                 toggleAbout
         );
