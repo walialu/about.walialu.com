@@ -36,6 +36,7 @@ function deploy {
                 dist/*.html \
                 dist/*.txt \
                 dist/*.jpg \
+                dist/me-heforshe.png \
                 root@superevilmegaco.com:/www/gorilla.moe/www/htdocs/
 }
 
