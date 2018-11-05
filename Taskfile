@@ -8,7 +8,7 @@ function build {
         # Concat libs and app.js
         cat ./lib/tippy.all.min.js ./src/app.js > ./dist/app.js
         # Minify using https://github.com/babel/minify#cli
-        minify ./dist/app.js > ./dist/app.min.js
+        ./node_modules/.bin/minify ./dist/app.js > ./dist/app.min.js
         cp -r ./static/* ./dist/
         cp ./src/index.html ./dist/
         # Copy shared libs
@@ -17,6 +17,17 @@ function build {
         cp ./lib/fontawesome-free-5.1.0-web/css/all.css ./tmp/fontawesome-all.css
         sed -i.bak s:../webfonts:lib/fontawesome-free-5.1.0-web/webfonts:g ./tmp/fontawesome-all.css
         sed -e '/\/\*FONTAWESOMECSS\*\//{r ./tmp/fontawesome-all.css' -e 'd}' -i.bak ./dist/index.html
+        rm dist/index.html.bak
+        ./node_modules/.bin/uglifycss ./src/app.css > ./dist/app.min.css
+        sed -e '/\/\*INLINECUSTOMAPPCSS\*\//{r ./dist/app.min.css' -e 'd}' -i.bak ./dist/index.html
+        rm dist/index.html.bak
+        html-minifier \
+                --collapse-whitespace \
+                --remove-comments \
+                --remove-optional-tags \
+                --remove-tag-whitespace \
+                dist/index.html > dist/index.min.html
+        mv dist/index.min.html dist/index.html
         # Optimize jpgs based on Googles Guidelines:
         # https://developers.google.com/speed/docs/insights/OptimizeImages
         for f in `ls -1 dist/*.jpg`; do
