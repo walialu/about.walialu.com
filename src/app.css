@@ -219,6 +219,7 @@
 @font-face {
         font-family: "Permanent Marker";
         font-style: normal;
+        font-display: swap;
         font-weight: 400;
         src: local("Permanent Marker Regular"), local("PermanentMarker-Regular"),
                 url(fonts/PermanentMarker/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2)
@@ -309,6 +310,26 @@ body.about .back-button {
 }
 audio {
         display: none;
+}
+
+.pagespeed-container {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+        z-index: 9;
+}
+
+a.pagespeed {
+        cursor: pointer;
+        font-size: 32px;
+        color: #fff;
+        text-decoration: none;
+        transition: color 1s;
+}
+a.pagespeed:hover {
+        color: #ff3;
 }
 
 .back-button-container {

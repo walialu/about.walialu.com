@@ -62,6 +62,10 @@ function full-deploy {
         dist/lib root@superevilmegaco.com:/www/gorilla.moe/www/htdocs/
 }
 
+function build-and-deploy {
+        build && deploy
+}
+
 function help {
         echo "$0 <task> <args>"
         echo "Tasks:"
