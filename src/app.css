@@ -312,6 +312,14 @@ audio {
         display: none;
 }
 
+#pagespeed-screenshot {
+        display: none;
+}
+
+.pagespeed-screenshot-img {
+        max-width: 100%;
+}
+
 .pagespeed-container {
         position: fixed;
         bottom: 20px;
@@ -321,14 +329,15 @@ audio {
         z-index: 9;
 }
 
-a.pagespeed {
+.pagespeed {
         cursor: pointer;
         font-size: 32px;
         color: #fff;
         text-decoration: none;
         transition: color 1s;
 }
-a.pagespeed:hover {
+
+.pagespeed:hover {
         color: #ff3;
 }
 
