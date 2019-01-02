@@ -25,7 +25,6 @@ function build {
                 --collapse-whitespace \
                 --remove-comments \
                 --remove-optional-tags \
-                --remove-tag-whitespace \
                 dist/index.html > dist/index.min.html
         mv dist/index.min.html dist/index.html
         # Optimize jpgs based on Googles Guidelines:
