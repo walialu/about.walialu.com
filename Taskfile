@@ -51,6 +51,7 @@ function deploy {
                 dist/mail.asc \
                 dist/email.asc \
                 dist/pair.bash \
+                dist/colors.* \
                 root@superevilmegaco.com:/www/gorilla.moe/www/htdocs/
 }
 
