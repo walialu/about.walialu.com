@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>Link anatomy</title>
+		<meta name="viewport" content="width=device-width" />
+		<meta name="flattr:id" content="49rp3y" />
+		<meta name="p:domain_verify" content="3749f00e2d1a134ff6f3a10e380ce645" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<meta name="theme-color" content="#19cf85" />
+		<style>
+html, body {height:100%;background-color:rgb(25, 207, 133);}
+html {display:table; width:100%;}
+body {display:table-cell; text-align:center; vertical-align:middle; font-family:georgia; font-size:230%; line-height:1em; white-space:nowrap;}
+
+[title] {position:relative; display:inline-block; box-sizing:border-box; line-height:2em; cursor:pointer;}
+
+[title]:before {content:attr(title); font-family:monospace; position:absolute; top:100%; width:100%; left:50%; margin-left:-50%; font-size:40%; line-height:1.5; background:black;}
+[title]:hover:before,
+:target:before {background:#black; color:yellow;}
+
+[title] [title]:before {margin-top:1.5em;}
+[title] [title] [title]:before {margin-top:3em;}
+
+[title]:hover,
+:target {position:relative; z-index:1; outline:50em solid rgba(25, 207, 133, 0.6);}
+
+		</style>
+	</head>
+	<body>
+		<span id="href" title="href"><span id="protocol" title="protocol">https:</span>//<span id="host" title="host"><span id="hostname" title="hostname">cdn.gorilla.moe</span>:<span id="port" title="port">443</span></span><span id="pathname" title="pathname">/gorilla/freeletics/aphrodite.mp4</span><span id="search" title="search">?noop=true</span><span id="hash" title="hash">#bang</span></span>
+	</body>
+</html>
