@@ -466,6 +466,8 @@ audio {
         color: #fff;
         text-decoration: none;
         border-bottom: 1px dashed;
+        display: inline-block;
+        height: 1.4rem;
 }
 .container2 a:hover {
         border-bottom: 0 none;
