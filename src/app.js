@@ -1,5 +1,11 @@
 (function(window, document) {
         "use strict";
+        const swapper = document.querySelector(".swapper");
+        swapper.addEventListener("click", () => {
+                swapper.querySelectorAll("img").forEach((img) => {
+                        img.classList.toggle("hidden");
+                });
+        });
         const toggleAbout = () => {
                 document.body.classList.toggle("normal");
                 document.body.classList.toggle("about");

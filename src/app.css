@@ -279,6 +279,14 @@ body.about .back-button {
         opacity: 1;
 }
 
+.swapper {
+        cursor: pointer;
+}
+
+.hidden {
+        display: none;
+}
+
 .container1 header {
         font-family: "Permanent Marker", cursive;
         font-size: 2rem;
@@ -303,11 +311,13 @@ body.about .back-button {
         color: #fff;
         text-decoration: none;
 }
-.container1 img,
-.container1 video {
+
+.container1 img {
         max-width: 100%;
         border-radius: 50%;
+        border: 3px solid #fff;
 }
+
 audio {
         display: none;
 }

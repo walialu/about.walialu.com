@@ -59,6 +59,7 @@ function full-deploy {
         deploy
         scp -r \
         dist/just-do-it.* \
+        dist/pool.* \
         dist/lib root@superevilmegaco.com:/www/gorilla.moe/www/htdocs/
 }
 
