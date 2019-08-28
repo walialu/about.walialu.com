@@ -52,7 +52,7 @@ function deploy {
                 dist/email.asc \
                 dist/pair.bash \
                 dist/colors.* \
-                root@superevilmegaco.com:/www/about.gorilla.moe/htdocs/
+                root@superevilmegaco.com:/www/walialu.com/about/htdocs/
 }
 
 function full-deploy {
@@ -60,7 +60,7 @@ function full-deploy {
         scp -r \
         dist/just-do-it.* \
         dist/pool.* \
-        dist/lib root@superevilmegaco.com:/www/about.gorilla.moe/htdocs/
+        dist/lib root@superevilmegaco.com:/www/walialu.com/about/htdocs/
 }
 
 function build-and-deploy {
