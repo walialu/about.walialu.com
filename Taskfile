@@ -52,7 +52,7 @@ function deploy {
                 dist/email.asc \
                 dist/pair.bash \
                 dist/colors.* \
-                root@superevilmegaco.com:/www/walialu.com/about/htdocs/
+                root@superevilmegaco.com:/www/about.walialu.com/htdocs/
 }
 
 function full-deploy {
