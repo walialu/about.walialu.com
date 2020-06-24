@@ -439,11 +439,6 @@ audio {
                 width: 100%;
         }
 }
-.container1 i.fas,
-.container1 i.fab,
-.container1 i.far {
-        transition: color 0.75s ease;
-}
 .container1 i.fas:hover,
 .container1 i.fab:hover,
 .container1 i.far:hover {
