@@ -449,6 +449,7 @@ audio {
         position: relative;
         width: 85%;
         margin: auto;
+        padding-top: 2rem;
         margin-bottom: 2rem;
         font-family: "Nanum Pen Script", cursive;
         opacity: 0;
